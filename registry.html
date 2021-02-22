@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCL用户中心-注册TCL账号</title>
+    <link rel="icon" href="https://www.tcl.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/registry.css">
+    <script src="script/registry_module.js" type="module"></script>
+</head>
+
+<body>
+    <header class="w">
+        <div class="header-box">
+            <a class="logo fl" href="index1.html"><img src="https://user.tcl.com/img/logo.png"></a>
+            <span class="fl">TCL账号登录</span>
+        </div>
+    </header>
+    <main>
+        <div class="main-box w">
+            <div class="login-box">
+                <p class="login-title">注册TCL账号</p>
+                <form action="http://10.31.165.16/TCL/php/registry.php" method="POST">
+                    <div class="login-group">
+                        <em id="spt1"></em>
+                        <input type="text" placeholder="用户名" id="username" name="username">
+                        <span></span>
+                    </div>
+                    <div class="login-group">
+                        <em id="spt2"></em>
+                        <input type="text" maxlength="11" placeholder="手机号" id="tel" name="tel">
+                        <span></span>
+                    </div>
+                    <div class="login-group">
+                        <em id="spt3"></em>
+                        <input type="password" placeholder="密码" id="password" name="password">
+                        <span></span>
+                    </div>
+                    <div class="login-btn">
+                        <input type="submit" value="注册" name="submit">
+                    </div>
+                </form>
+                <div class="login-btm clearfix">
+                    <a id="btn-goLogin" href="login.html" class="fl">已有账号直接登录</a>
+                    <a href="javascript:;" class="fr">推荐第三方登录</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="footer-box">
+        <p class="footnav">
+            <a href="javascript:;">关于TCL</a>
+            <a href="javascript:;">社会责任</a>
+            <a href="javascript:;">投资者关系</a>
+            <a href="javascript:;">新闻中心</a>
+            <a href="javascript:;">经销商之家</a>
+        </p>
+        <p class="copyright"> ©2010-2016 TCL CORPORATION All Rights Reserved. <a href="javascript:;">使用条款</a>
+            TCL集团股份有限公司版权所有 粤ICP备05040863号
+        </p>
+    </div>
+</body>
+
+</html>
